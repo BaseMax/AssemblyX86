@@ -1,0 +1,15 @@
+section .data
+	msg db		0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x2c, 0x20, 0x57, 0x6f, 0x72, 0x6c, 0x64, 0x21
+
+section .text
+	global _start
+
+_start:
+	mov		rax, 1
+	mov		rdi, 1
+	mov		rsi, msg
+	mov		rdx, 13
+	syscall
+	mov		rax, 60
+	mov		rdi, 0
+	syscall
