@@ -16,7 +16,7 @@ ld -m elf_i386 -o <filename> <filename>.o
 #### 64bit
 
 ```
-nasm -f elf -o <filename>.o <filename>.asm
+nasm -f elf64 -o <filename>.o <filename>.asm
 ld -o <filename> <filename>.o
 ```
 
